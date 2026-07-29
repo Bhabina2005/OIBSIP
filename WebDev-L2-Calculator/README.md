@@ -1,23 +1,115 @@
-# Calculator
+# 🧮 Calculator Web Application
 
-A responsive calculator web application built using HTML, CSS, and JavaScript.
+A modern and responsive Calculator Web Application developed using **HTML, CSS, and JavaScript** as part of the **Oasis Infobyte Web Development Internship (Level 2 - Task 1)**.
 
-## Features
+## 📌 Project Overview
 
-- Basic arithmetic operations
-- Keyboard support
-- Percentage calculation
-- Clear and backspace functionality
-- Responsive glassmorphism UI
-- Error handling
+This calculator performs basic arithmetic operations with a clean and user-friendly interface. It is fully responsive and supports both mouse and keyboard input.
 
-## Technologies Used
+---
+
+## ✨ Features
+
+- ➕ Addition
+- ➖ Subtraction
+- ✖️ Multiplication
+- ➗ Division
+- 📊 Percentage Calculation
+- 🗑️ Clear Display
+- ⌫ Backspace Support
+- ⌨️ Keyboard Support
+- ⚠️ Error Handling
+- 📱 Responsive Design
+- 🎨 Modern Glassmorphism UI
+
+---
+
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6)
 
-## Internship Task
+---
 
-Oasis Infobyte Web Development Internship  
-Level 2 - Task 1
+## 📂 Project Structure
+
+```
+WebDev-L2-Calculator/
+│── index.html
+│── style.css
+│── script.js
+│── README.md
+```
+
+---
+
+## 🚀 How to Run
+
+1. Download or clone this repository.
+2. Open the project folder.
+3. Open **index.html** in your browser.
+
+No additional installation is required.
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Key | Function |
+|------|----------|
+| 0-9 | Enter Numbers |
+| + - * / | Arithmetic Operations |
+| . | Decimal Point |
+| Enter | Calculate Result |
+| Backspace | Delete Last Character |
+| Escape | Clear Display |
+
+---
+
+## 📸 Screenshot
+
+> Add a screenshot of your calculator here after uploading it.
+
+Example:
+
+```
+images/calculator.png
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+During this project, I learned:
+
+- DOM Manipulation
+- Event Handling
+- JavaScript Functions
+- Keyboard Events
+- Responsive Web Design
+- CSS Grid Layout
+- Error Handling using `try...catch`
+
+---
+
+## 📈 Future Improvements
+
+- Dark Mode
+- Scientific Calculator
+- Calculation History
+- Theme Customization
+
+---
+
+## 👩‍💻 Developed By
+
+**Bhabina Babu**
+
+Information Science and Engineering Student
+
+---
+
+## 📜 Internship
+
+This project was developed as part of the **Oasis Infobyte Web Development Internship (Level 2 - Task 1)**.

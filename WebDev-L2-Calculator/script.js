@@ -1,244 +1,101 @@
 // ===========================================
-// Calculator JavaScript
-// Oasis Infobyte Level 2 - Task 1
+// Calculator - Oasis Infobyte Level 2
 // ===========================================
 
-
-// Get Display
+// Get the display element
 const display = document.getElementById("display");
 
-
-// Get All Buttons
+// Get all calculator buttons
 const buttons = document.querySelectorAll("button");
 
-
 // ===========================================
-// Calculate Function
+// Function to calculate result
 // ===========================================
-function calculate() {
-
+function calculateResult() {
     try {
-
-        if (display.value === "") {
-            return;
-        }
-
-
-        // Allow only calculator characters
-        if (!/^[0-9+\-*/.]+$/.test(display.value)) {
-
-            display.value = "Error";
-            return;
-
-        }
-
-
-        let result = Function(
-            "return " + display.value
-        )();
-
-
-        // Division by zero handling
-        if (result === Infinity || isNaN(result)) {
-
-            display.value = "Error";
-
-        } 
-        else {
-
-            display.value = result;
-
-        }
-
-
+        display.value = eval(display.value);
     } catch (error) {
-
         display.value = "Error";
-
     }
-
 }
 
-
-
 // ===========================================
-// Button Click Support
+// Mouse Click Support
 // ===========================================
-
-buttons.forEach(button => {
-
+buttons.forEach((button) => {
 
     button.addEventListener("click", () => {
 
-
         const value = button.dataset.value;
 
+        switch (value) {
 
+            case "C":
+                display.value = "";
+                break;
 
-        // Clear
-        if (value === "C") {
+            case "backspace":
+                display.value = display.value.slice(0, -1);
+                break;
 
-            display.value = "";
+            case "%":
+                if (display.value !== "") {
+                    display.value = Number(display.value) / 100;
+                }
+                break;
 
-        }
+            case "=":
+                calculateResult();
+                break;
 
-
-        // Backspace
-        else if (value === "backspace") {
-
-            display.value =
-                display.value.slice(0, -1);
-
-        }
-
-
-        // Percentage
-        else if (value === "%") {
-
-
-            if (display.value !== "") {
-
-                display.value =
-                    Number(display.value) / 100;
-
-            }
+            default:
+                display.value += value;
 
         }
-
-
-        // Equal
-        else if (value === "=") {
-
-            calculate();
-
-        }
-
-
-        // Decimal Handling
-        else if (value === ".") {
-
-
-            let currentNumber =
-                display.value.split(/[+\-*/]/).pop();
-
-
-            if (!currentNumber.includes(".")) {
-
-                display.value += ".";
-
-            }
-
-        }
-
-
-        // Operators and Numbers
-        else {
-
-
-            let lastCharacter =
-                display.value.slice(-1);
-
-
-
-            // Prevent multiple operators
-            if (
-                ["+", "-", "*", "/"].includes(lastCharacter) &&
-                ["+", "-", "*", "/"].includes(value)
-            ) {
-
-                return;
-
-            }
-
-
-            display.value += value;
-
-        }
-
 
     });
 
-
 });
-
-
 
 // ===========================================
 // Keyboard Support
 // ===========================================
-
-document.addEventListener("keydown", function(event) {
-
+document.addEventListener("keydown", (event) => {
 
     const key = event.key;
 
-
-
     // Numbers
     if (!isNaN(key) && key !== " ") {
-
         display.value += key;
-
     }
-
-
 
     // Operators
-    else if (
-        ["+", "-", "*", "/", "."].includes(key)
-    ) {
-
-
+    else if (["+", "-", "*", "/", "."].includes(key)) {
         display.value += key;
-
     }
 
-
-
-    // Enter = Calculate
+    // Enter
     else if (key === "Enter") {
-
         event.preventDefault();
-
-        calculate();
-
+        calculateResult();
     }
-
-
 
     // Backspace
     else if (key === "Backspace") {
-
         event.preventDefault();
-
-        display.value =
-            display.value.slice(0, -1);
-
+        display.value = display.value.slice(0, -1);
     }
 
-
-
-    // Clear
+    // Escape
     else if (key === "Escape") {
-
         display.value = "";
-
     }
-
-
 
     // Percentage
     else if (key === "%") {
-
-
         if (display.value !== "") {
-
-            display.value =
-                Number(display.value) / 100;
-
+            display.value = Number(display.value) / 100;
         }
-
     }
-
 
 });
