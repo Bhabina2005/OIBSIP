@@ -1,0 +1,242 @@
+/* ==========================================
+   RESET
+========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================================
+   BODY
+========================================== */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+/* ==========================================
+   INPUT SECTION
+========================================== */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+/* Input Box */
+#taskInput {
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 10px;
+
+    font-size: 1rem;
+}
+
+/* Add Button */
+#addTask {
+    padding: 14px 22px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #4CAF50;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#addTask:hover {
+    background: #43A047;
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   TASK LIST
+========================================== */
+#taskList {
+    list-style: none;
+}
+
+/* Each Task */
+#taskList li {
+
+    background: white;
+
+    margin-bottom: 12px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+
+}
+
+#taskList li:hover {
+
+    transform: translateY(-3px);
+
+}
+
+/* Completed Task */
+.completed {
+
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+
+}
+
+/* ==========================================
+   BUTTON GROUP
+========================================== */
+.button-group{
+
+    display:flex;
+    gap:8px;
+
+}
+
+/* Edit Button */
+.edit-btn{
+
+    background:#2196F3;
+    color:white;
+
+}
+
+/* Delete Button */
+.delete-btn{
+
+    background:#F44336;
+    color:white;
+
+}
+
+/* Complete Button */
+.complete-btn{
+
+    background:#FF9800;
+    color:white;
+
+}
+
+/* Common Button Style */
+.button-group button{
+
+    border:none;
+
+    padding:8px 12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.button-group button:hover{
+
+    opacity:0.9;
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   STATS
+========================================== */
+.stats{
+
+    margin-top:25px;
+
+    background:rgba(255,255,255,0.2);
+
+    padding:18px;
+
+    border-radius:12px;
+
+    color:white;
+
+}
+
+.stats p{
+
+    margin:8px 0;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+@media(max-width:600px){
+
+    .input-section{
+
+        flex-direction:column;
+
+    }
+
+    #addTask{
+
+        width:100%;
+
+    }
+
+    .container{
+
+        padding:20px;
+
+    }
+
+}

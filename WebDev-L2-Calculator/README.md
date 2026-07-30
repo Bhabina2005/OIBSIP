@@ -69,15 +69,9 @@ No additional installation is required.
 
 ## 📸 Screenshot
 
-> Add a screenshot of your calculator here after uploading it.
+![Calculator](images/calculator.png)
 
-Example:
 
-```
-images/calculator.png
-```
-
----
 
 ## 🎯 Learning Outcomes
 
