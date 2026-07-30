@@ -6,6 +6,23 @@ This repository contains all the projects I completed during the internship usin
 
 ---
 
+# 🌐 Live Demo
+
+### 🏠 Repository Homepage
+
+🔗 **https://bhabina2005.github.io/OIBSIP/**
+
+### 🚀 Individual Projects
+
+| Project | Live Demo |
+|---------|-----------|
+| 🧮 Calculator | https://bhabina2005.github.io/OIBSIP/WebDev-L2-Calculator/ |
+| 🌹 Tribute Page | https://bhabina2005.github.io/OIBSIP/WebDev-L2-TributePage/ |
+| ✅ To-Do Web Application | https://bhabina2005.github.io/OIBSIP/WebDev-L2-ToDoApp/ |
+| 🔐 Login Authentication System | https://bhabina2005.github.io/OIBSIP/WebDev-L2-LoginAuthentication/ |
+
+---
+
 ## 📋 Project Summary
 
 | Task | Project | Status |
@@ -127,7 +144,7 @@ OIBSIP/
 │
 ├── README.md
 ├── index.html
-|---style.css
+├── style.css
 │
 ├── WebDev-L2-Calculator/
 │   ├── index.html
@@ -184,23 +201,8 @@ No additional installation or dependencies are required.
 
 ---
 
-# 📸 Screenshots
 
-You can add screenshots of each completed project here.
 
-Example:
-
-```text
-Calculator Screenshot
-
-Tribute Page Screenshot
-
-To-Do App Screenshot
-
-Login Authentication Screenshot
-```
-
----
 
 # 🎯 Learning Outcomes
 
@@ -225,8 +227,7 @@ During this internship, I gained hands-on experience in:
 🎓 Information Science & Engineering Student
 
 - GitHub: https://github.com/Bhabina2005
-- LinkedIn: www.linkedin.com/in/bhabina-babu
-
+- LinkedIn: https://www.linkedin.com/in/bhabina-babu
 
 ---
 

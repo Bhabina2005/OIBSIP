@@ -36,6 +36,9 @@ A simple and elegant To-Do list application built with HTML, CSS, and JavaScript
 - Use the **✏** button to edit a task.
 - Use the **🗑** button to remove a task.
 
+## LIVE DEMO
+✅ To-Do Web Application | https://bhabina2005.github.io/OIBSIP/WebDev-L2-ToDoApp/
+
 ## 📌 Notes
 
 This project is part of the OIBSIP Web Development Level 2 tasks and demonstrates basic DOM manipulation and interactive UI design.

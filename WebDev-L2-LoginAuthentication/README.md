@@ -36,6 +36,10 @@ A simple login and registration web app built with HTML, CSS, and JavaScript. It
 - Use the eye icon to show or hide the password.
 - After registration, switch to the login form and sign in.
 
+## LIVE DEMO
+
+ 🔐 Login Authentication System | https://bhabina2005.github.io/OIBSIP/WebDev-L2-LoginAuthentication/ 
+
 ## 📌 Notes
 
 This project is a beginner-friendly authentication demo and uses browser local storage for persistence during the session.
