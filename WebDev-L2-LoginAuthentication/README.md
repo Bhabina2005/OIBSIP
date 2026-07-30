@@ -38,7 +38,7 @@ A simple login and registration web app built with HTML, CSS, and JavaScript. It
 
 ## LIVE DEMO
 
- 🔐 Login Authentication System | https://bhabina2005.github.io/OIBSIP/WebDev-L2-LoginAuthentication/ 
+ 🔐 Login Authentication System  https://bhabina2005.github.io/OIBSIP/WebDev-L2-LoginAuthentication/ 
 
 ## 📌 Notes
 

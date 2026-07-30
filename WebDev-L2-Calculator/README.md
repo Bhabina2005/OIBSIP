@@ -96,7 +96,7 @@ During this project, I learned:
 
 ---
 ## LIVE DEMO
-🧮 Calculator | https://bhabina2005.github.io/OIBSIP/WebDev-L2-Calculator/ 
+🧮 Calculator  https://bhabina2005.github.io/OIBSIP/WebDev-L2-Calculator/ 
 
 ## 👩‍💻 Developed By
 

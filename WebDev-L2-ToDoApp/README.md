@@ -37,7 +37,7 @@ A simple and elegant To-Do list application built with HTML, CSS, and JavaScript
 - Use the **🗑** button to remove a task.
 
 ## LIVE DEMO
-✅ To-Do Web Application | https://bhabina2005.github.io/OIBSIP/WebDev-L2-ToDoApp/
+✅ To-Do Web Application  https://bhabina2005.github.io/OIBSIP/WebDev-L2-ToDoApp/
 
 ## 📌 Notes
 
