@@ -1,0 +1,359 @@
+/* ==========================================
+   RESET
+========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================================
+   BODY
+========================================== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+.container {
+
+    width: 100%;
+    max-width: 420px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+
+    animation: fadeIn 0.5s ease;
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.container h1{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    letter-spacing:1px;
+
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================
+   FORM TITLE
+========================================== */
+
+.form-box h2{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.form-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    background:white;
+
+    transition:0.3s;
+
+}
+
+.form-box input:focus{
+
+    box-shadow:0 0 8px #FFD54F;
+
+}
+
+/* ==========================================
+   PASSWORD BOX
+========================================== */
+
+.password-box{
+
+    position:relative;
+
+    margin-bottom:15px;
+
+}
+
+.password-box input{
+
+    padding-right:50px;
+
+    margin-bottom:0;
+
+}
+
+.password-box span{
+
+    position:absolute;
+
+    top:50%;
+
+    right:15px;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    user-select:none;
+
+    font-size:18px;
+
+    color:#555;
+
+}
+
+.password-box span:hover{
+
+    color:#000;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.form-box button{
+
+    margin-top:5px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.form-box button:hover{
+
+    background:#43A047;
+
+    transform:translateY(-2px);
+
+}
+
+.form-box button:active{
+
+    transform:scale(0.97);
+
+}
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.form-box p{
+
+    margin-top:20px;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+/* ==========================================
+   LINK
+========================================== */
+
+.form-box span{
+
+    color:#FFD54F;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.form-box span:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+#message{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    min-height:25px;
+
+    color:white;
+
+}
+
+/* ==========================================
+   LOGOUT BUTTON
+========================================== */
+
+#logoutBtn{
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#F44336;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+#logoutBtn:hover{
+
+    background:#d32f2f;
+
+}
+
+/* ==========================================
+   HIDDEN
+========================================== */
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:480px){
+
+    .container{
+
+        padding:25px;
+
+    }
+
+    .container h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .form-box input{
+
+        font-size:15px;
+
+    }
+
+    .form-box button{
+
+        font-size:15px;
+
+    }
+
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Authentication System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔐 Login Authentication</h1>
+
+        <!-- =========================
+             Login Form
+        ========================== -->
+
+        <div id="loginForm" class="form-box">
+
+            <h2>Login</h2>
+
+            <!-- Email -->
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Enter Email">
+
+            <!-- Password -->
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter Password">
+
+                <span id="toggleLoginPassword">👁️</span>
+
+            </div>
+
+            <!-- Login Button -->
+            <button id="loginBtn">
+                Login
+            </button>
+
+            <p>
+                Don't have an account?
+
+                <span id="showRegister">
+                    Register
+                </span>
+
+            </p>
+
+        </div>
+
+        <!-- =========================
+             Register Form
+        ========================== -->
+
+        <div id="registerForm" class="form-box hidden">
+
+            <h2>Create Account</h2>
+
+            <!-- Full Name -->
+            <input
+                type="text"
+                id="registerName"
+                placeholder="Full Name">
+
+            <!-- Email -->
+            <input
+                type="email"
+                id="registerEmail"
+                placeholder="Email">
+
+            <!-- Password -->
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Password">
+
+                <span id="toggleRegisterPassword">👁️</span>
+
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password">
+
+                <span id="toggleConfirmPassword">👁️</span>
+
+            </div>
+
+            <!-- Register Button -->
+            <button id="registerBtn">
+                Register
+            </button>
+
+            <p>
+
+                Already have an account?
+
+                <span id="showLogin">
+                    Login
+                </span>
+
+            </p>
+
+        </div>
+
+        <!-- Success / Error Message -->
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
