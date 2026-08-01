@@ -231,9 +231,6 @@ During this internship, I gained hands-on experience in:
 
 ---
 
-# 📄 License
-
-This repository is created for educational purposes as part of the **Oasis Infobyte Web Development & Designing Internship (Level 2)**.
 
 ---
 

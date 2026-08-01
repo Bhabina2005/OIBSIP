@@ -106,6 +106,4 @@ Information Science and Engineering Student
 
 ---
 
-## 📜 Internship
 
-This project was developed as part of the **Oasis Infobyte Web Development Internship (Level 2 - Task 1)**.
